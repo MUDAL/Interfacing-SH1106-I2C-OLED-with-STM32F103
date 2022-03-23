@@ -5,9 +5,8 @@
 #include "i2c.h"
 #include "sh1106.h"
 
-int main(void)
+static void System_Config(void)
 {
-	//Initializations
   Clock_HSI_8MHz_Init();
   SysTick_Init();
   GPIO_Reset();
@@ -16,7 +15,13 @@ int main(void)
   				 (GPIO_PIN6_OUTPUT_MODE_2MHZ | GPIO_PIN7_OUTPUT_MODE_2MHZ),
   				 (GPIO_PIN6_ALT_FUNC_OPEN_DRAIN | GPIO_PIN7_ALT_FUNC_OPEN_DRAIN));
   I2C_Init(I2C1,I2C_PERIPH_FREQ_8MHZ,I2C_STANDARD_MODE_8MHZ_CCR,I2C_STANDARD_MODE_8MHZ_TRISE);
+}
 
+int main(void)
+{
+	//Initializations
+	System_Config();
+	
   SH1106_Init();
   SH1106_ClearScreen();
   SH1106_SetCursor(2,0);

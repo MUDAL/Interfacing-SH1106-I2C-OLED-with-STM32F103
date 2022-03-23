@@ -1,6 +1,6 @@
 Dependencies for Project 'sh1106_oled_code', Target 'stm32f103': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (.\main.c)(0x62364BBE)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.c)(0x623B6126)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADDBCE)
 I (.\RTE\_stm32f103\RTE_Components.h)(0x623642D6)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
@@ -11,11 +11,11 @@ I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADDBCE)
 I (clock.h)(0x623649FA)
 I (systick.h)(0x623649FA)
-I (gpio.h)(0x623649FA)
+I (gpio.h)(0x623B5E35)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x602585EC)
 I (i2c.h)(0x62364A76)
 I (sh1106.h)(0x62364C73)
-F (.\sh1106.c)(0x62364A76)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\sh1106.o --omf_browse .\objects\sh1106.crf --depend .\objects\sh1106.d)
+F (.\sh1106.c)(0x62364CAD)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\sh1106.o --omf_browse .\objects\sh1106.crf --depend .\objects\sh1106.d)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADDBCE)
 I (.\RTE\_stm32f103\RTE_Components.h)(0x623642D6)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
@@ -40,7 +40,7 @@ I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADDBCE)
 I (i2c.h)(0x62364A76)
 F (.\i2c.h)(0x62364A76)()
-F (.\gpio.c)(0x623649F9)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+F (.\gpio.c)(0x623B5E35)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADDBCE)
 I (.\RTE\_stm32f103\RTE_Components.h)(0x623642D6)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)
@@ -50,8 +50,8 @@ I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D44B52)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADDBCE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x602585EC)
-I (gpio.h)(0x623649FA)
-F (.\gpio.h)(0x623649FA)()
+I (gpio.h)(0x623B5E35)
+F (.\gpio.h)(0x623B5E35)()
 F (.\systick.c)(0x623649FA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADDBCE)
 I (.\RTE\_stm32f103\RTE_Components.h)(0x623642D6)
@@ -63,7 +63,7 @@ I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\system_stm32f10x.h)(0x61ADDBCE)
 I (systick.h)(0x623649FA)
 F (.\systick.h)(0x623649FA)()
-F (.\clock.c)(0x623649FA)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
+F (.\clock.c)(0x6238C0B3)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections-I.\RTE\Device\STM32F103C8-I.\RTE\_stm32f103-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include\stm32f10x.h)(0x61ADDBCE)
 I (.\RTE\_stm32f103\RTE_Components.h)(0x623642D6)
 I (C:\Users\OLAOLUWA\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm3.h)(0x60D44B52)

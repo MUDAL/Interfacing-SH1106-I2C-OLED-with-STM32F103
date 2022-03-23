@@ -14,33 +14,10 @@ void GPIO_Reset(void)
 
 void GPIO_InputInit(GPIO_TypeDef* gpioPort, 
 										uint8_t portLevel, 
-										uint8_t gpioPin,
+										uint16_t gpioPins,
 										uint32_t config,  
 										bool pullupEn)
 											 
-{
-	if(portLevel == GPIO_PORT_REG_HIGH)
-	{
-		gpioPort->CRH |= config;
-	}
-	else
-	{
-		gpioPort->CRL |= config;
-	}
-	if(pullupEn)
-	{
-		gpioPort->ODR |= (1<<gpioPin);
-	}
-}
-
-/**
-@brief Configures multiple GPIO pins to input mode.  
-*/
-void GPIO_MultipleInputInit(GPIO_TypeDef* gpioPort, 
-													  uint8_t portLevel, 
-													  uint16_t gpioPins,
-													  uint32_t config,  
-													  bool pullupEn)						 
 {
 	if(portLevel == GPIO_PORT_REG_HIGH)
 	{
@@ -75,44 +52,32 @@ void GPIO_OutputInit(GPIO_TypeDef* gpioPort,
 }
 
 void GPIO_OutputWrite(GPIO_TypeDef* gpioPort,
-											uint8_t gpioPin,
+											uint16_t gpioPins,
 											bool gpioPinLogic)
 																
 {
-	gpioPort->ODR &= ~(1<<gpioPin);
+	gpioPort->ODR &= ~gpioPins;
 	if(gpioPinLogic)
 	{
-		gpioPort->ODR |= (1<<gpioPin);
+		gpioPort->ODR |= gpioPins;
 	}
 }
 
-void GPIO_OutputClearMultiple(GPIO_TypeDef* gpioPort, uint32_t gpioPins)
+bool GPIO_InputRead(GPIO_TypeDef* gpioPort, uint16_t gpioPin)
 {
-	gpioPort->ODR &= ~gpioPins;
-}
-
-void GPIO_OutputWriteMultiple(GPIO_TypeDef* gpioPort, uint32_t gpioPins)
-{
-	gpioPort->ODR |= gpioPins;
-}
-
-bool GPIO_InputRead(GPIO_TypeDef* gpioPort, uint8_t gpioPin)
-{
-	if((gpioPort->IDR & (1<<gpioPin)) == (1<<gpioPin))
+	if((gpioPort->IDR & gpioPin) == gpioPin)
 	{
 		return true;
 	}
-	
 	return false;
 }
 
-bool GPIO_OutputRead(GPIO_TypeDef* gpioPort, uint8_t gpioPin)
+bool GPIO_OutputRead(GPIO_TypeDef* gpioPort, uint16_t gpioPin)
 {
-	if((gpioPort->ODR & (1<<gpioPin)) == (1<<gpioPin))
+	if((gpioPort->ODR & gpioPin) == gpioPin)
 	{
 		return true;
 	}
-	
 	return false;	
 }
 	
