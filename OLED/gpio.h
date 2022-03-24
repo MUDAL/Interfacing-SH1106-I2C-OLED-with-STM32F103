@@ -80,9 +80,7 @@ enum PortRegLevel
 #define GPIO_PIN15_INPUT_PULLUP_OR_PULLDOWN 	GPIO_CRH_CNF15_1
 #define GPIO_PIN15_OUTPUT_MODE_2MHZ						GPIO_CRH_MODE15_1
 
-//Resets GPIO registers
 extern void GPIO_Reset(void);
-
 //Initializes the GPIO to the input mode of choice 
 extern void GPIO_InputInit(GPIO_TypeDef* gpioPort, 
 													 uint8_t portLevel,  
@@ -94,15 +92,13 @@ extern void GPIO_OutputInit(GPIO_TypeDef* gpioPort,
 														uint8_t portLevel,
 														uint32_t mode,
 														uint32_t config);
-
 //Writes a logic 'high' or 'low' to a GPIO pin
 extern void GPIO_OutputWrite(GPIO_TypeDef* gpioPort,
 														 uint16_t gpioPins,
 														 bool gpioPinLogic);
-
-//Returns the logic level ( high(true) or low(false) ) of a GPIO input pin
+//Returns the logic level (high(true) or low(false)) of a GPIO input pin
 extern bool GPIO_InputRead(GPIO_TypeDef* gpioPort, uint16_t gpioPin);
-
+//Returns the logic level (high(true) or low(false)) of a GPIO output pin
 extern bool GPIO_OutputRead(GPIO_TypeDef* gpioPort, uint16_t gpioPin);
 
 #endif //_GPIO_H

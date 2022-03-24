@@ -1,5 +1,5 @@
 #include "stm32f10x.h"                  // Device header
-#include "SH1106.h"
+#include "sh1106.h"
 #include "systick.h"
 #include "i2c.h"
 #include <string.h>

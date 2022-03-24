@@ -25,7 +25,7 @@ int main(void)
   SH1106_Init();
   SH1106_ClearScreen();
   SH1106_SetCursor(2,0);
-  SH1106_WriteString("Good Day!!!", White);
+  SH1106_WriteString("Hello!!!", White);
   SH1106_UpdateScreen();
   SysTick_DelayMs(1000);
 

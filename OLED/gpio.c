@@ -2,6 +2,11 @@
 #include <stdbool.h>
 #include "gpio.h"
 
+/**
+	* Sets GPIO port configuration registers to a default state
+	* (i.e. an Analog mode)
+	* PA13,PA14,PA15,PB2,PB3 and PB4 are left in their reset states.
+*/
 void GPIO_Reset(void)
 {
 	GPIOA->CRL &= ~0xCCCCCCCC;
